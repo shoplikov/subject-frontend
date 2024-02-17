@@ -1,0 +1,150 @@
+/* main */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+ background-image: linear-gradient(#4CA1AF, #C4E0E5);
+ z-index: -1;   
+}
+
+nav {
+    font-size: 24px;
+}
+
+.container {
+    padding: 10px;
+}
+
+#learn:link{
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none;
+}
+
+.carousel-inner {
+    height: 0;
+    padding-bottom: 50%; /* this sets carousel aspect ratio (4:1 here) */
+}
+  
+.carousel-item {
+    position: absolute !important; /* Bootstrap is insistent */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+  
+.carousel-item img {
+    height: 100%; /* Bootstrap handles width already */
+    object-fit: cover; /* or 'contain' if you want stretch instead of crop */
+}
+
+.d-block{
+    border-radius: 2%;
+}
+
+li.nav-item a{
+    color:black
+}
+
+/* login */
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+.card.shadow-sm img{
+    height: 280px;
+    width: 420px;
+}
+
+.modal-body{
+    display: grid;
+    grid-template-columns: auto;
+}
+.modal-body img{
+    height: auto;
+    width: 100%;
+    clear: both;
+    justify-items: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+/* fade */
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #88c1ca;
+    border: solid 1px #c3c3c3;
+}
+  
+#panel {
+    padding: 50px;
+    display: none;
+}
+
+/* flip */
+#flip{
+    border: solid black 2px;
+}
+
+#flip:hover {
+    background: #e1e1e1;
+    border: 1px solid #d0d0d0;
+ }
+
+#findAnimalsButton{
+    margin-left: 15px;
+}
+
+#findAnimalsButton{
+    font-weight: 600;
+    font-size: large;
+}
+
+#listAnimals{
+    font-weight: 600;
+    font-size: large;
+}
+
+
+/* Animation */
+  .letter {
+    display: inline-block;
+    font-size: 3rem;
+    color: transparent;
+    animation: bounce 0.5s ease infinite alternate;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+      color: transparent;
+    }
+    100% {
+      transform: translateY(-10px);
+      color: rgb(206, 203, 13); /* Change the color to your preference */
+    }
+  }
+  
+  .animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

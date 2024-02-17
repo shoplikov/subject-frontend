@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en"  data-bs-theme="white">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoopedia - Your Source for Animal Information</title> 
+    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="icon" href="images/paw-icon. ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="scripts.js"></script>  
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="container">
+  <nav class="navbar navbar-expand-lg bg-transparent">
+    <div class="container-fluid">
+      <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img src="./images/paws.png" alt="logo" style="height:40px; width:40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="articles.html">Articles</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Authorize
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="login.html">Login</a></li>
+              <li><a class="dropdown-item" href="registration.html">Registration</a></li>
+            </ul>
+          </li>
+        </ul>
+        <button id="listAnimals"  class="btn btn-info">View the list of all animals</button>
+        <button id="findAnimalsButton" class="btn btn-info">Find out the number of animals</button>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Articles -->
+<div class="container">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    
+    <!-- Girrafe Article -->
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="./images/giraffe-overview.jpg" class="img-fluid">
+          <div class="card-body">
+            <p class="card-text">The giraffe, Earth's tallest land animal, is an iconic and remarkable creature. Known for its incredibly long neck, the giraffe's distinctive spots and graceful stature make it instantly recognizable. These spots are as unique as fingerprints, as no two giraffes have the exact same pattern.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#giraffe-modal">View</button>
+                <button class="btn btn-sm btn-outline-secondary" id="play-sound-giraffe">Play Sound</button>
+              </div>
+              <small class="text-body-secondary">1 sec</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Giraffe Modal -->
+      <div class="modal fade" id="giraffe-modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-tittle" id="modalLabel">Giraffe</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class="rounded float-left" src="./images/giraffe-overview.jpg" alt="Giraffe Image">
+              <p>Giraffes are native to the African continent and are herbivores, primarily feeding on leaves from tall trees. Their long necks allow them to reach vegetation that is out of reach for other herbivores, and their prehensile tongues can strip leaves from branches with precision.</p>
+              <p>These gentle giants have a slow and majestic gait, making them a captivating sight in the African savannah. Despite their towering height, giraffes are surprisingly agile and can run at impressive speeds when threatened. Their distinct appearance and peaceful demeanor have made them a symbol of Africa's wildlife and conservation efforts. However, giraffe populations have faced challenges due to habitat loss and poaching, making their preservation a matter of urgency.</p>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Floppa Article -->
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="./images/floppa.png" class="img-fluid">
+            <div class="card-body">
+            <p class="card-text">"Floppa" is a playful and endearing term that is often used to describe domestic cats, especially when they exhibit a relaxed or floppy posture. Domestic cats are beloved pets worldwide, known for their charming and sometimes capricious behavior.They can often be found lounging in sunbeams.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#floppa-modal">View</button>
+                <button class="btn btn-sm btn-outline-secondary" id="play-sound-floppa">Play Sound</button>
+              </div>
+              <small class="text-body-secondary">1 sec</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Floppa Modal -->
+      <div class="modal fade" id="floppa-modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-tittle" id="modalLabel">Floppa</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class="rounded float-left" src="./images/floppa.png">
+              <span>Cats are known for their independent nature, agility, and hunting instincts. While they may have a reputation for being aloof, many cat owners can attest to the strong bonds that can develop between cats and their human companions. The soothing purring of a cat is a universally appreciated sound, providing comfort and companionship.
+                In the world of the internet, "Floppa" might refer to a specific cat with a significant online presence or a name given to any cat exhibiting particularly adorable or floppy behavior. Regardless of the context, cats, or "Floppas," continue to hold a special place in our hearts, both in real life and in the virtual world.</span>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Headgehog Article -->
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="./images/headgehog.jpg" class="img-fluid">
+            <div class="card-body">
+            <p class="card-text">The hedgehog is a charming and unique creature that captivates hearts with its distinctive appearance and endearing personality. These small, spiky mammals are found in various parts of the world and are adored for their intriguing combination of cuteness and ruggedness.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#headgehog-modal">View</button>
+                <button class="btn btn-sm btn-outline-secondary" id="play-sound-headgehog">Play Sound</button>
+              </div>
+              <small class="text-body-secondary">2 sec</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Headgehog Modal -->
+      <div class="modal fade" id="headgehog-modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-tittle" id="modalLabel">Headgehog</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class="rounded float-left" src="./images/headgehog.jpg">
+              <span>Hedgehogs are characterized by their round bodies covered in spines, which they use for protection. When threatened, they curl up into a tight ball, creating a formidable barrier of sharp quills. Despite their prickly exterior, hedgehogs are gentle and timid animals that play an essential role in controlling insect populations, as they are primarily insectivores.
+
+                One of the most delightful aspects of hedgehogs is their inquisitive and often comical behavior. They have a keen sense of smell and use their snouts to explore their surroundings, leading to adorable sniffing and digging antics. Hedgehogs are also known for their distinctive waddle when they walk, adding to their charm.</span>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Panda Article -->
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="./images/panda.jpg" class="img-fluid">
+        <div class="card-body">
+          <p class="card-text">The giant panda (Ailuropoda melanoleuca), sometimes called a panda bear or simply panda, is a bear species endemic to China. It is characterised by its bold black-and-white coat and rotund body. The name "giant panda" is sometimes used to distinguish it from the red panda, a neighboring musteloid.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#panda-modal">View</button>
+              <button class="btn btn-sm btn-outline-secondary" id="play-sound-panda">Play Sound</button>
+            </div>
+            <small class="text-body-secondary">3 sec</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Panda Modal -->
+      <div class="modal fade" id="panda-modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-tittle" id="modalLabel">Panda</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class="rounded float-left" src="./images/panda.jpg" alt="Panda Image">
+              <p>The giant panda (Ailuropoda melanoleuca), sometimes called a panda bear or simply panda, is a bear species endemic to China. It is characterised by its bold black-and-white coat and rotund body. The name "giant panda" is sometimes used to distinguish it from the red panda, a neighboring musteloid.</p>
+              <p>The giant panda lives in a few mountain ranges in central China, mainly in Sichuan, and also in neighbouring Shaanxi and Gansu. As a result of farming, deforestation, and other development, the giant panda has been driven out of the lowland areas where it once lived, and it is a conservation-reliant vulnerable species. A 2007 report showed 239 pandas living in captivity inside China and another 27 outside the country. By December 2014, 49 giant pandas lived in captivity outside China, living in 18 zoos in 13 countries.</p>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Sloth Article -->
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="./images/sloth.jpg" class="img-fluid">
+            <div class="card-body">
+            <p class="card-text">Sloths are a Neotropical group of xenarthran mammals constituting the suborder Folivora, including the extant arboreal tree sloths. Noted for their slowness of movement, tree sloths spend most of their lives hanging upside down in the trees of the tropical rainforests of South America and Central America.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#sloth-modal">View</button>
+                <button class="btn btn-sm btn-outline-secondary" id="play-sound-sloth">Play Sound</button>
+              </div>
+              <small class="text-body-secondary">1 sec</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Sloth Modal -->
+      <div class="modal fade" id="sloth-modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-tittle" id="modalLabel">Sloth</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class="rounded float-left" src="./images/sloth.jpg">
+              <span>Sloths are a Neotropical group of xenarthran mammals constituting the suborder Folivora, including the extant arboreal tree sloths and extinct terrestrial ground sloths. Noted for their slowness of movement, tree sloths spend most of their lives hanging upside down in the trees of the tropical rainforests of South America and Central America. Sloths are considered to be most closely related to anteaters, together making up the xenarthran order Pilosa.<br><br>
+                <p>There are six extant sloth species in two genera – Bradypus (three–toed sloths) and Choloepus (two–toed sloths). Despite this traditional naming, all sloths have three toes on each rear limb-- although two-toed sloths have only two digits on each forelimb.</p>
+              </span>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pangolion Article -->
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="./images/pangolion.jpg" class="img-fluid">
+            <div class="card-body">
+            <p class="card-text">Pangolins are mammals of the order Pholidota. The one extant family, the Manidae, has three genera: Manis, Phataginus, and Smutsia. Manis comprises four species found in Asia, while Phataginus and Smutsia include two species each, all found in sub-Saharan Africa.
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#pango-modal">View</button>
+                <button class="btn btn-sm btn-outline-secondary" id="play-sound-pango">Play Sound</button>
+              </div>
+              <small class="text-body-secondary">5 sec</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Pangolion Modal -->
+      <div class="modal fade" id="pango-modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-tittle" id="modalLabel">Pangolion</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class="rounded float-left" src="./images/pangolion.jpg">
+              <span>Pangolins, sometimes known as scaly anteaters, are mammals of the order Pholidota. The one extant family, the Manidae, has three genera: Manis, Phataginus, and Smutsia. Manis comprises four species found in Asia, while Phataginus and Smutsia include two species each, all found in sub-Saharan Africa.<br><br>
+                    Pangolins have large, protective keratin scales, similar in material to fingernails and toenails, covering their skin; they are the only known mammals with this feature. They live in hollow trees or burrows, depending on the species. Pangolins are nocturnal, and their diet consists of mainly ants and termites, which they capture using their long tongues. 
+              </span>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary"><u>Home</u></a></li>
+      <li class="nav-item"><a href="articles.html" class="nav-link px-2 text-body-secondary"><u>Articles</u></a></li>
+      <li class="nav-item"><a href="login.html" class="nav-link px-2 text-body-secondary"><u>Login</u></a></li>
+    </ul>
+    <p class="text-center text-body-secondary">
+      Musabai Ali, Sultan Nurlan, Shoplikov Alisher from IT-2202 <br>
+      © 2023 - All rights reserved☺</p>
+  </footer>
+
+</div>
+
+</body>
+</html>

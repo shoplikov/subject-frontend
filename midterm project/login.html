@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en"  data-bs-theme="white">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoopedia - Your Source for Animal Information</title> 
+    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="icon" href="images/paw-icon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="container">
+  <nav class="navbar navbar-expand-lg bg-transparent">
+    <div class="container-fluid">
+      <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img src="./images/paws.png" alt="logo" style="height:40px; width:40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="articles.html">Articles</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Authorize
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="login.html">Login</a></li>
+              <li><a class="dropdown-item" href="registration.html">Registration</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+<!-- Login -->
+<div class="container">
+  <section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="images/login.png" class="img-fluid" alt="Login image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <form>
+            <!-- Email input -->
+            <div class="form-outline mb-4 mt-1 pt-5">
+              <input type="email" id="form3Example3" class="form-control form-control-lg" placeholder="Enter a valid email address" />
+              <label class="form-label" for="form3Example3">Email address</label>
+            </div>
+    
+            <!-- Password input -->
+            <div class="form-outline mb-3">
+              <input type="password" id="form3Example4" class="form-control form-control-lg" placeholder="Enter password" />
+              <label class="form-label" for="form3Example4">Password</label>
+            </div>
+    
+            <div class="d-flex justify-content-between align-items-center">
+              <!-- Checkbox -->
+              <div class="form-check mb-0">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                <label class="form-check-label" for="form2Example3">Remember me</label>
+              </div>
+              <a href="registration.html" class="text-body" id="forgotPass">Forgot password?</a>
+            </div>
+    
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button type="button" class="btn btn-primary btn-lg" id="login-button">Sign in</button>
+              <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="registration.html" class="link-danger" >Register</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Footer -->
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary"><u>Home</u></a></li>
+      <li class="nav-item"><a href="articles.html" class="nav-link px-2 text-body-secondary"><u>Articles</u></a></li>
+      <li class="nav-item"><a href="login.html" class="nav-link px-2 text-body-secondary"><u>Login</u></a></li>
+    </ul>
+    <p class="text-center text-body-secondary">
+      Musabai Ali, Sultan Nurlan, Shoplikov Alisher from IT-2202 <br>
+      © 2023 - All rights reserved☺</p>
+  </footer>
+  <script>
+    document.getElementById("forgotPass").addEventListener("click", myFunction);
+    function myFunction() {
+      alert ("Cycle through your other passwords.\nRecall your life at the time you made the password.\nMake sure you're typing correctly.\n");
+    }
+  </script>   
+  <script>
+    document.getElementById('login-button').addEventListener('click', function () {
+      // Get the email and password input values
+      const email = document.getElementById('form3Example3').value;
+      const password = document.getElementById('form3Example4').value;
+    
+      // Simple validation
+      if (!email || !password) {
+        alert('Please enter both email and password.');
+      } else {
+        // You can perform an AJAX request or other login logic here
+        // For this example, we'll just show an alert indicating successful login
+        alert('Login successful');
+      }
+    });
+  </script>
+  <script src="scripts.js"></script>
+</div>
+</body>
+</html>

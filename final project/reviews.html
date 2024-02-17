@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RevBook</title>
+    <link rel="icon" type="image/x-icon" href="static/images/book_icon.ico">
+    <!-- Styling -->
+    <link rel="stylesheet" href="css/styles.css">   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/558b7cfb28.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script></head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary rounded" aria-label="Thirteenth navbar example">
+      <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+          <a class="navbar-brand col-lg-3 me-0" href="index.html"><img src="static/images/book-svg.svg" alt="book_icon">RevBook</a>
+          <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" href="reviews.html">Reviews</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+          </ul>
+          <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+              <div class="dropdown">
+                  <button class="btn btn-outline-dark">Authorization 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="login.html">Login</a>
+                    <a href="registration.html">Registration</a>
+                  </div>
+              </div> 
+          </div>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Header for the reviews -->
+  <section class="pt-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light"><b>Welcome to Our Review Page</b>!</h1>
+          <p class="lead text-body-secondary">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- Articles -->
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <audio id="pageSwapSound" src="static/page_swap.mp3" preload="auto"></audio>
+      <!-- Book-1 -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="static/images/book-1.jpg" alt="" class="book-image">
+            <div class="card-body">
+              <div class="book-info">
+                <div class="book-title">In Search of Lost Time</div>
+                <div class="author-name">by Marcel Proust</div>
+              </div>
+              <div class="d-flex pt-2 justify-content-center">
+                <button type="button" class="btn btn-outline-secondary review-btn" data-toggle="modal" data-target="#reviewModal1">Review</button>
+              </div>   
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="reviewModal1" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel1" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="reviewModalLabel1">Review for In Search of Lost Time</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p><strong>Book Title:</strong> In Search of Lost Time</p>
+                <p><strong>Author:</strong> Marcel Proust</p>
+                <p><strong>Review:</strong> Swann's Way, the first part of A la recherche de temps perdu, Marcel Proust's seven-part cycle, was published in 1913. In it, Proust introduces the themes that run through the entire work. The narrator recalls his childhood, aided by the famous madeleine; and describes M. Swann's passion for Odette. The work is incomparable. Edmund Wilson said "[Proust] has supplied for the first time in literature an equivalent in the full scale for the new theory of modern physics."</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- EndBook-1 -->
+
+      <!-- Book=2 -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="static/images/book-2.jpg" alt="" class="book-image">
+            <div class="card-body">
+                <div class="book-info">
+                  <div class="book-title">Ulysses</div>
+                  <div class="author-name">by James Joyce</div>
+                </div>
+                <div class="d-flex pt-2 justify-content-center">
+                  <button type="button" class="btn btn-outline-secondary review-btn" data-toggle="modal" data-target="#reviewModal2">Review</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="reviewModal2" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel2" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="reviewModalLabel1">Review for Ulysses</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p><strong>Book Title:</strong> Ulysses</p>
+                <p><strong>Author:</strong> James Joyce</p>
+                <p><strong>Review:</strong> Ulysses chronicles the passage of Leopold Bloom through Dublin during an ordinary day, June 16, 1904. The title parallels and alludes to Odysseus (Latinised into Ulysses), the hero of Homer's Odyssey (e.g., the correspondences between Leopold Bloom and Odysseus, Molly Bloom and Penelope, and Stephen Dedalus and Telemachus). Joyce fans worldwide now celebrate June 16 as Bloomsday.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- EnbBook-2 -->
+
+      <!-- Book-3 -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="static/images/book-3.jpg" alt="" class="book-image">
+            <div class="card-body">
+                <div class="book-info">
+                  <div class="book-title">Don Quixote </div>
+                  <div class="author-name">by Miguel de Cervantes</div>
+                </div>
+                <div class="d-flex pt-2 justify-content-center">
+                  <button type="button" class="btn btn-outline-secondary review-btn" data-toggle="modal" data-target="#reviewModal3">Review</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="reviewModal3" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel3" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="reviewModalLabel1">Review for Don Quixote</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p><strong>Book Title:</strong> Don Quixote</p>
+                <p><strong>Author:</strong> Miguel de Cervantes</p>
+                <p><strong>Review:</strong> Alonso Quixano, a retired country gentleman in his fifties, lives in an unnamed section of La Mancha with his niece and a housekeeper. He has become obsessed with books of chivalry, and believes their every word to be true, despite the fact that many of the events in them are clearly impossible. Quixano eventually appears to other people to have lost his mind from little sleep and food and because of so much reading.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- EndBook-3 -->
+      
+      <!-- Book-4 -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="static/images/book-4.jpg" alt="" class="book-image">
+            <div class="card-body">
+                <div class="book-info">
+                  <div class="book-title">One Hundred Years of Solitude</div>
+                  <div class="author-name">by Gabriel Garcia Marquez</div>
+                </div>
+                <div class="d-flex pt-2 justify-content-center">
+                  <button type="button" class="btn btn-outline-secondary review-btn" data-toggle="modal" data-target="#reviewModal4">Review</button>
+                </div>   
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="reviewModal4" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel4" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="reviewModalLabel1">Review for One Hundred Years of Solitude</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p><strong>Book Title:</strong> One Hundred Years of Solitude</p>
+                <p><strong>Author:</strong> Gabriel Garcia Marquez</p>
+                <p><strong>Review:</strong> One of the 20th century's enduring works, One Hundred Years of Solitude is a widely beloved and acclaimed novel known throughout the world, and the ultimate achievement in a Nobel Prize–winning career. The novel tells the story of the rise and fall of the mythical town of Macondo through the history of the Buendía family. It is a rich and brilliant chronicle of life and death, and the tragicomedy of humankind.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- EndBook-4 -->
+
+      <!-- Book-5 -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="static/images/book-5.jpg" alt="" class="book-image">
+            <div class="card-body">
+                <div class="book-info">
+                  <div class="book-title">The Great Gatsby</div>
+                  <div class="author-name">by F. Scott Fitzgerald</div>
+                </div>
+                <div class="d-flex pt-2 justify-content-center">
+                  <button type="button" class="btn btn-outline-secondary review-btn" data-toggle="modal" data-target="#reviewModal5">Review</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="reviewModal5" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel5" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="reviewModalLabel1">Review for The Great Gatsby</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p><strong>Book Title:</strong> The Great Gatsby</p>
+                <p><strong>Author:</strong> F. Scott Fitzgerald</p>
+                <p><strong>Review:</strong> The novel chronicles an era that Fitzgerald himself dubbed the "Jazz Age". Following the shock and chaos of World War I, American society enjoyed unprecedented levels of prosperity during the "roaring" 1920s as the economy soared. At the same time, Prohibition, the ban on the sale and manufacture of alcohol as mandated by the Eighteenth Amendment, made millionaires out of bootleggers and led to an increase in organized crime.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- EndBook-5 -->
+
+      <!-- Book=6 -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="static/images/book-6.jpg" alt="" class="book-image">
+            <div class="card-body">
+                <div class="book-info">
+                  <div class="book-title">Moby Dick</div>
+                  <div class="author-name">by Herman Melville</div>
+                </div>
+                <div class="d-flex pt-2 justify-content-center">
+                  <button type="button" class="btn btn-outline-secondary review-btn" data-toggle="modal" data-target="#reviewModal6">Review</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="reviewModal6" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel6" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="reviewModalLabel1">Review for Moby Dick</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p><strong>Book Title:</strong> Moby Dick</p>
+                <p><strong>Author:</strong> Herman Melville</p>
+                <p><strong>Review:</strong> First published in 1851, Melville's masterpiece is, in Elizabeth Hardwick's words, "the greatest novel in American literature." The saga of Captain Ahab and his monomaniacal pursuit of the white whale remains a peerless adventure story but one full of mythic grandeur, poetic majesty, and symbolic power. Filtered through the consciousness of the novel's narrator, Ishmael, Moby-Dick draws us into a universe full of fascinating characters and stories, from the noble cannibal Queequeg to the natural history of whales, while reaching existential depths that excite debate and contemplation to this day.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- EndBook-6 -->
+        
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+      $(".review-btn").on("click", function () {
+          playPageSwapSound();
+      });
+    
+      function playPageSwapSound() {
+          var pageSwapSound = document.getElementById("pageSwapSound");
+          if (pageSwapSound && typeof pageSwapSound.play === 'function') {
+              pageSwapSound.play();
+          }
+      }
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer class="bg-light py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="reviews.html" class="nav-link px-2 text-body-secondary">Reviews</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-body-secondary">Contact us</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">© 2023 Shoplikov Alisher IT-2202</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

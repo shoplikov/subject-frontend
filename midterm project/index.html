@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en"  data-bs-theme="white">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoopedia - Your Source for Animal Information</title>   
+    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="icon" href="images/paw-icon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+<!-- Navbar -->
+<div class="container">
+  <nav class="navbar navbar-expand-lg bg-transparent">
+    <div class="container-fluid">
+      <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img src="./images/paws.png" alt="logo" style="height:40px; width:40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="articles.html">Articles</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Authorize
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="login.html">Login</a></li>
+              <li><a class="dropdown-item" href="registration.html">Registration</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+          <div id="results"></div>
+        </form>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Content -->
+<div class="container">
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold text-body-emphasis">OVERVIEW</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4"><b>Welcome to Zoopedia, your ultimate destination for a fascinating journey into the animal kingdom! At Zoopedia, we are passionate about the incredible diversity of life on Earth, and we're here to share our enthusiasm with you.</b></p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3"><a href="articles.html" class="link-light" style="text-decoration: none;">Learn More</a></button>
+        <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button> -->
+      </div>
+      <div class="container">
+        <div class="animation-container">
+          <div class="letter">Z</div>
+          <div class="letter">o</div>
+          <div class="letter">o</div>
+          <div class="letter">P</div>
+          <div class="letter">e</div>
+          <div class="letter">d</div>
+          <div class="letter">i</div>
+          <div class="letter">a</div>
+        </div>
+      </div>
+    
+    </div>
+    <div class="overflow-hidden" style="max-height: 43vh;">
+
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div id="flip"><strong>For instance, Capybaras:</strong></div>
+  <div id="panel"><i>Capybaras are short-haired brownish rodents with blunt snouts, short legs, small ears, and almost no tail. They are shy and associate in groups along the banks of lakes and rivers. They normally feed in the morning and evening and spend most of the day resting under cover along the banks.</i></div>
+</div>
+
+<!-- Carousel -->
+<div class="container">
+  <div id="carouselExampleDark" class="carousel carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="https://japanhouse.illinois.edu/uploads/general/_1200x630_crop_center-center_82_none/capybara-yuzuyu.jpeg?mtime=1642099928" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-bg-dark bg-opacity-25">
+            <h5>First fact</h5>
+            <p>Capybaras are short-haired brownish rodents with blunt snouts, short legs, small ears, and almost no tail. </p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="https://www.jungleisland.com/wp-content/uploads/2022/07/capybara-gallery-2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-bg-dark bg-opacity-25">
+          <h5>Second Fact</h5>
+          <p>They are shy and associate in groups along the banks of lakes and rivers.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.azpetvet.com/wp-content/uploads/AdobeStock_392946527-scaled.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-bg-dark bg-opacity-25">
+          <h5>Third fact</h5>
+          <p>They normally feed in the morning and evening and spend most of the day resting under cover along the banks.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary"><u>Home</u></a></li>
+      <li class="nav-item"><a href="articles.html" class="nav-link px-2 text-body-secondary"><u>Articles</u></a></li>
+      <li class="nav-item"><a href="login.html" class="nav-link px-2 text-body-secondary"><u>Login</u></a></li>
+    </ul>
+    <p class="text-center text-body-secondary">
+      Musabai Ali, Sultan Nurlan, Shoplikov Alisher from IT-2202 <br>
+      © 2023 - All rights reserved☺</p>
+  </footer>
+</div>
+  <script> 
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+      });
+    });
+  </script>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>
